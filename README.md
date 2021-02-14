@@ -1,4 +1,4 @@
-# PHP-disarchive
+# PHP unzip
 _Unzip archive in a directory or folder_
 
 Questo script PHP consente di decomprimere un file zip in una cartella o di una directory
