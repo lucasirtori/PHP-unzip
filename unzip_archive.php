@@ -4,7 +4,7 @@ $archive = new PclZip('archive.zip');
 if (($v_result_list = $archive->extract()) == 0) {
   die("Error : ".$archive->errorInfo(true));
 }
-echo "<!DOCTYPE html>
+echo '<!DOCTYPE html>
 <html>
  
 <head>
@@ -80,5 +80,5 @@ echo "<!DOCTYPE html>
  
 </body>
  
-</html>";
+</html>';
 ?>
