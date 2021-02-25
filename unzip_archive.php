@@ -4,7 +4,8 @@ $archive = new PclZip('archive.zip');
 if (($v_result_list = $archive->extract()) == 0) {
   die("Error : ".$archive->errorInfo(true));
 }
-echo '<!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html>
  
 <head>
@@ -68,7 +69,7 @@ echo '<!DOCTYPE html>
 <body>
  
   <div class="container">
-  <h3>Unzip successfully!</h3>
+  <?php echo='<h3>Unzip successfully!</h3>'; ?>
   <div class="progress-bar">
     <div class="shadow"></div>
   </div>
@@ -80,5 +81,4 @@ echo '<!DOCTYPE html>
  
 </body>
  
-</html>';
-?>
+</html>
